@@ -3,7 +3,11 @@
    
     <head>
         <meta charset="UTF-8" />
-        <link rel="stylesheet" href="assets/css/style.css">
+
+         <!-- CSS File -->
+         <link href="./assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+         <link href="./assets/lib/catslider/catslider.css" rel="stylesheet">
+         <link rel="stylesheet" href="assets/css/style.css">
         <title>Stella Sun</title>
     </head>
 
@@ -16,16 +20,14 @@
                 <nav>
                     <ul>
                         <li><a href="#About-Me">About Me</a></li>
-                        <li><a href="#Work">Work</a></li>
-                        <li><a href="#Contact-Info">Contact Info</a></li>
+                        <li><a href="#Work">Projects</a></li>
+                        <li><a href="#Contact-Info">Contact</a></li>
                         <li><a href="#Resume">Resume</a></li>
                     </ul>
                 </nav>
             </header>
 
     <main>
-
-        <section class="subtitle"></section>
 
         <!-- Sidebar -->
         <aside>
@@ -35,40 +37,88 @@
         <!-- Content -->
         <article id="About-Me">
                 <ul>
-                    <li>Master of Professional Study - Parsons School of Design Fashion Management</li>
+
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu eleifend mauris, quis laoreet tortor. Mauris ultrices nibh a velit malesuada scelerisque. Vivamus sed lorem et lacus lobortis viverra. Quisque vulputate malesuada suscipit. Integer et tellus pellentesque, pulvinar nibh sed, ornare lorem. Nunc ut laoreet elit, at maximus turpis. 
+                    Praesent ac fringilla enim. Aliquam volutpat nec velit vitae mattis. Vestibulum vehicula arcu non euismod pretium. Quisque sagittis bibendum libero vel vestibulum. In hac habitasse platea dictumst. Nullam nisl sapien, pulvinar condimentum auctor eget, vestibulum ac odio. Phasellus sit amet lectus molestie, maximus elit sed, vestibulum diam. 
+                    Vivamus dapibus, augue at posuere pellentesque, ex quam pulvinar turpis, eget dapibus enim ex vel nisi. Integer sed augue quis enim posuere pretium ut id massa. Integer non velit in neque tincidunt lacinia.
                 </ul>
         </article>
 
         <!-- Sidebar -->
         <aside>
-            <h2>Work Experience:</h2>
+            <h2>Projects:</h2>
         </aside>
-        
-        <!-- Content -->
-            <article id="Work">
-                <div class="Work">
-                    <section class="card">
-                    <header>GRAZIA</header>
-                    <img src="assets/images/Work-1.jpg" alt="GRAZIA" />
-                    </section>
-                    <section class="card">
-                    <header>OLEADA</header>
-                    <img src="assets/images/Work-2.jpg" alt="OLEADA" />
-                    </section>
-                    <section class="card">
-                    <header>Advertising</header>
-                    <img src="assets/images/Work-3.jpeg"  alt="Advertising"/>
-                    </section>
-                    <section class="card">
-                    <header>BOOTCAMP</header>
-                    <img src="assets/images/Work-4.jpeg"  alt="BOOTCAMP"/>
-                    </section>
-                </div> 
-            </article>
+
+        <!-- Project Cotent -->
+
+        <div class="container" id="Projects">
+            <div class="row">
+            <hr class="aligncenter">
+            <div class="col-md-10 col-md-offset-1">
+                <div id="mi-slider" class="mi-slider">
+                <ul>
+                    <li><a data-toggle="modal" data-target="#myModal"><img src="./assets/images/bootcamp-food-1.png" alt="img01"><h4>Food Generator</h4></a></li>
+                    <li><a data-toggle="modal" data-target="#myModal"><img src="./assets/images/Work-4.jpeg" alt="img02"><h4>Boot Camp</h4></a></li>
+                    <li><a data-toggle="modal" data-target="#myModal"><img src="./assets/images/Work-4.jpeg" alt="img03"><h4>Boot Camp</h4></a></li>
+                </ul>
+                <ul>
+                    <li><a data-toggle="modal" data-target="#myModal"><img src="./assets/images/Work-2.jpg" alt="img05"><h4>OLEADA</h4></a></li>
+                    <li><a data-toggle="modal" data-target="#myModal"><img src="./assets/images/Work-1.jpeg" alt="img06"><h4>Work</h4></a></li>
+                    <li><a data-toggle="modal" data-target="#myModal"><img src="./assets/images/Work-1.jpeg" alt="img07"><h4>Work</h4></a></li>
+                    <li><a data-toggle="modal" data-target="#myModal"><img src="./assets/images/Work-1.jpeg" alt="img08"><h4>Work</h4></a></li>
+                </ul>
+                <ul>
+                    <li><a data-toggle="modal" data-target="#myModal"><img src="./assets/images/work-3.jpeg" alt="img09"><h4>Personal</h4></a></li>
+                    <li><a data-toggle="modal" data-target="#myModal"><img src="./assets/images/work-3.jpeg" alt="img10"><h4>Personal</h4></a></li>
+                    <li><a data-toggle="modal" data-target="#myModal"><img src="./assets/images/work-3.jpeg" alt="img11"><h4>Personal</h4></a></li>
+                </ul>
+                <nav>
+                    <a href="#">Boot Camp</a>
+                    <a href="#">Work</a>
+                    <a href="#">Personal</a>
+                </nav>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- MODAL DEMO FOR A MENU ITEM -->
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <!-- Modal 1 -->
+                <h5 class="modal-title" id="myModalLabel">Food Generator</h5>
+                </div>
+                <div class="modal-body">
+                <img class="img-responsive aligncenter" src="./assets/images/modal-1.png" alt="">
+                <h4>Food Generator</h4>
+                <p class="text-p">Need some inspiration? MM...Food is a tool to help you find food inspiration, and recipes to come along with it, at the tap of a single button.</p>
+                <p class="text-p"><li>AS A food enthusiast</li>
+                    <li>I WANT food inspiration, and recipes to come along with it</li> 
+                    <li>SO THAT i can eat!!</li>
+                    <li>GIVEN a simple website, with a button that says, "food generator"</li>
+                    <li>WHEN i push the button</li>
+                    <li>THEN a picture of a randomly generated, food dish appears on the screen</li>
+                    <li>WHEN i look beneath the picture</li>
+                    <li>THEN i see recipes displayed at my very fingertips</li>
+                </p>
+                <h4>Deployed Website Link</h4>
+                <h5>https://brudter.github.io/mm...food/</h5>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+ 
         
         <!-- Sidebar -->
         <aside>
-            <h2>Contact Info:</h2>
+            <h2>Contact:</h2>
         </aside>
 
         <!-- Content -->
@@ -86,6 +136,16 @@
             <h2>Made with ❤️️ by Stella</h2>
             <h3>Thanks for visiting!</h3>
         </footer>
+
+        <!-- JavaScript Libraries -->
+        <script src="./assets/lib/jquery/jquery.min.js"></script>
+        <script src="./assets/lib/bootstrap/js/bootstrap.min.js"></script>
+        <script src="./assets/lib/php-mail-form/validate.js"></script>
+        <script src="./assets/lib/modernizr/modernizr.custom.js"></script>
+        <script src="./assets/lib/catslider/catslider.js"></script>
+
+        <!-- Main Javascript File -->
+        <script src="./assets/./js/main.js"></script>
 
     </body>
 </html>

@@ -7,6 +7,37 @@ body {
     background-color: #ffffff;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+html, body {
+  height: 100%;
+}
+
+.aligncenter {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  clear: both;
+}
+
+.centered {
+  text-align: center
+}
+
+p {
+  padding: 0;
+  margin-bottom: 12px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #42413e;
+  margin-top: 10px;
+}
+
 /* Header Style */
 .header {
     display: flex;
@@ -15,6 +46,7 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
+    margin-bottom: 30px;
 }
 
 .header h1 {
@@ -44,70 +76,47 @@ a {
     text-decoration:underline;
 }
 
-/* subtitle Style */
-.subtitle {
-    height: 600px;
-    width: 100%;
-    background-image: url("/Users/stella/Desktop/codingclass/week2-homework/assets/images/Key-factors-in-building-ecommerce-websites.jpeg");
-    background-size: cover;
-    background-position: center;
-}
-
-main {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-p {
-    text-align: center;
-    text-decoration: none;
-    font-size: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-}
 /* aside Style */
 aside {
-    width: 25%;
-    padding: 60px;
+    width: 15%;
+    padding: 20px;
     color:#ffffff;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     text-align: left;
-  }
-
-/* Content Style */
-
-  .Work {
-    position: relative;
-    background-color: #fff;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .card {
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 10px;
-    padding: 10px;
-    flex: 0 0 400px;
-  }
-  
-  .card header {
-    padding: 20px;
-  }
-  
-  .card p {
-    text-align: center;
-  }
-  
-  .card img {
-    width: 100%;
+    margin-bottom: 10px;
   }
 
 
-  .footer {
+/* Modal Modification */
+
+.modal-body h4 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 10px 10px 0;
+  color: #f27242;
+}
+
+.modal-body h5 {
+  font-family: 'Libre Baskerville', serif;
+  font-style: italic;
+  padding: 10px 10px 0;
+}
+
+.modal-body p {
+  margin-left: 10px;
+  margin-right: 10px;
+  line-height: 18px;
+}
+
+.modal-footer {
+  background: #f2f2f2;
+}
+
+
+.footer {
     background-color: #d8a47f;
     color: #ffffff;
     padding: 30px;
